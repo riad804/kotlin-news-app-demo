@@ -1,8 +1,6 @@
 # Kotlin News App Demo
 
-<img src="screenshots/Screenshot_20250810_172149.png" width="250" alt="App Screenshot 1"> 
-<img src="screenshots/Screenshot_20250810_172220.png" width="250" alt="App Screenshot 2">
-<img src="screenshots/Screenshot_20250810_172320.png" width="250" alt="App Screenshot 2">
+<img src="screenshots/Screenshot_20250810_172149.png" width="250" alt="App Screenshot 1"> <img src="screenshots/Screenshot_20250810_172220.png" width="250" alt="App Screenshot 2"> <img src="screenshots/Screenshot_20250810_172320.png" width="250" alt="App Screenshot 2">
 A simple Android news application built with Kotlin, demonstrating modern Android development practices. This app fetches news articles from an API and displays them to the user.
 
 ## ✨ Features
