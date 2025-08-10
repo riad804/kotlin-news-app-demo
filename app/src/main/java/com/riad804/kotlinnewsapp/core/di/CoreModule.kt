@@ -1,7 +1,9 @@
 package com.riad804.kotlinnewsapp.core.di
 
 import androidx.room.Room
+import com.riad804.kotlinnewsapp.core.data.NewsRepositoryImpl
 import com.riad804.kotlinnewsapp.core.data.local.ArticleDatabase
+import com.riad804.kotlinnewsapp.core.domain.NewsRepository
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.cio.CIO
 import io.ktor.client.engine.cio.endpoint
@@ -17,9 +19,13 @@ import io.ktor.http.HttpHeaders
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
 import org.koin.android.ext.koin.androidApplication
+import org.koin.core.module.dsl.singleOf
+import org.koin.dsl.bind
 import org.koin.dsl.module
 
 val coreModule = module {
+    singleOf(::NewsRepositoryImpl).bind<NewsRepository>()
+
     single {
         Room.databaseBuilder(
             androidApplication(),

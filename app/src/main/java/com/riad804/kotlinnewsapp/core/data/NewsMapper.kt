@@ -9,7 +9,7 @@ import com.riad804.kotlinnewsapp.core.domain.NewsList
 fun NewsListDto.toNewsList(): NewsList {
     return NewsList(
         nextPage = nextPage,
-        results = results?.map { it.toArticle() } ?: emptyList(),
+        articles = results?.map { it.toArticle() } ?: emptyList(),
     )
 }
 
