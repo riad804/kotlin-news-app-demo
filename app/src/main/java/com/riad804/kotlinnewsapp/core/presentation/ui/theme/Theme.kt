@@ -1,6 +1,5 @@
-package com.riad804.kotlinnewsapp.ui.theme
+package com.riad804.kotlinnewsapp.core.presentation.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

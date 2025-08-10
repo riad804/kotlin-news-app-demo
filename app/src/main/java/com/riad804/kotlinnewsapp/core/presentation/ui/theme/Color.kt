@@ -1,4 +1,4 @@
-package com.riad804.kotlinnewsapp.ui.theme
+package com.riad804.kotlinnewsapp.core.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
